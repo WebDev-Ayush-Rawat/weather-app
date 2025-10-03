@@ -1,0 +1,159 @@
+/* responsive.css */
+
+/* ------------------BIG DESKTOPS (1200px and above) */
+@media (min-width: 1200px) {
+  .main-container {
+    width: 50%;
+    max-width: 1000px;
+  }
+
+  .temp-main-container h1 {
+    font-size: 7rem;
+  }
+
+  .temp-main-container h3 {
+    font-size: 3.5rem;
+  }
+
+  .temp-details h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* ------------------LAPTOPS / SMALL DESKTOPS (1024px – 1199px) */
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .main-container {
+    width: 65%;
+  }
+
+  .temp-main-container h1 {
+    font-size: 5.5rem;
+  }
+
+  .temp-main-container h3 {
+    font-size: 2.8rem;
+  }
+
+  .temp-details h3 {
+    font-size: 2rem;
+  }
+}
+
+/* ------------------TABLETS (768px – 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .main-container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .search-input-container {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search-input-container input,
+  .search-input-container button {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .temp-main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+  }
+
+  .temp-main-container img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .temp-details-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+  }
+
+  .temp-main-container h1 {
+    font-size: 4rem;
+  }
+
+  .temp-main-container h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* ------------------PHONES (below 768px) */
+@media (max-width: 767px) {
+  html {
+    font-size: 55%;
+  }
+
+  .main-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .search-input-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .search-input-container input,
+  .search-input-container button {
+    width: 100%;
+    height: 45px;
+    font-size: 1.4rem;
+  }
+
+  .temp-main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 15px;
+  }
+
+  .temp-main-container img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .temp-details-container {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+
+  .temp-main-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .temp-main-container h3 {
+    font-size: 2rem;
+  }
+
+  .temp-details h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ------------------EXTRA SMALL PHONES (below 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-container {
+    width: 95%;
+    padding: 8px;
+  }
+
+  .temp-main-container img {
+    width: 70%;
+  }
+
+  .search-input-container input,
+  .search-input-container button {
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
